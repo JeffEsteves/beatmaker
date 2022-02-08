@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+
+  <title>BeatMaker</title>
+</head>
+
+<body>
+
+  <div class="sequencer">
+    <div class="kick-track">
+      <div class="controls">
+        <img src="/Icons/kick.png" alt="drum">
+        <h1>Kick</h1>
+        <button data-track="0" class="mute kick-volume">
+          <i class="fas fa-volume-mute"></i>
+        </button>
+        <select name="kick-select" id="kick-select">
+          <option value="./allSounds/kick-808.wav">Normal</option>
+          <option value="./allSounds/kick-acoustic01.wav">Acoustic 1</option>
+          <option value="./allSounds/kick-acoustic02.wav">Acoustic 2</option>
+          <option value="./allSounds/kick-big.wav">Big</option>
+          <option value="./allSounds/kick-classic.wav">Classic</option>
+          <option value="./allSounds/kick-cultivator.wav">Cultivator</option>
+          <option value="./allSounds/kick-deep.wav">Deep</option>
+          <option value="./allSounds/kick-dry.wav">Dry</option>
+          <option value="./allSounds/kick-floppy.wav">Floppy</option>
+          <option value="./allSounds/kick-gritty.wav">Gritty</option>
+          <option value="./allSounds/kick-heavy.wav">Heavy</option>
+          <option value="./allSounds/kick-newwave.wav">New Wave</option>
+          <option value="./allSounds/kick-oldschool.wav">Old School</option>
+          <option value="./allSounds/kick-plain.wav">Plain</option>
+          <option value="./allSounds/kick-slapback.wav">Slap Back</option>
+          <option value="./allSounds/kick-softy.wav">Softy</option>
+          <option value="./allSounds/kick-stomp.wav">Stomp</option>
+          <option value="./allSounds/kick-tape.wav">Tape</option>
+          <option value="./allSounds/kick-thump.wav">Thump</option>
+          <option value="./allSounds/kick-tight.wav">Tight</option>
+          <option value="./allSounds/kick-tron.wav">Tron</option>
+          <option value="./allSounds/kick-vinyl01.wav">Vinyl 1</option>
+          <option value="./allSounds/kick-vinyl02.wav">Vinyl 2</option>
+          <option value="./allSounds/kick-zapper.wav">Zapper</option>
+        </select>
+      </div>
+      <div class="kick">
+        <div class="pad kick-pad b0"></div>
+        <div class="pad kick-pad b1"></div>
+        <div class="pad kick-pad b2"></div>
+        <div class="pad kick-pad b3"></div>
+        <div class="pad kick-pad b4"></div>
+        <div class="pad kick-pad b5"></div>
+        <div class="pad kick-pad b6"></div>
+        <div class="pad kick-pad b7"></div>
+        <div class="pad kick-pad b8"></div>
+        <div class="pad kick-pad b9"></div>
+      </div>
+    </div>
+    <div class="snare-track">
+      <div class="controls">
+        <img src="/Icons/snare.png" alt="snare">
+        <h1>Snare</h1>
+        <button data-track="1" class="mute snare-volume">
+          <i class="fas fa-volume-mute"></i>
+        </button>
+        <select name="snare-select" id="snare-select">
+          <option value="./allSounds/snare-808.wav">Normal</option>
+          <option value="./allSounds/snare-acoustic01.wav">Acoustic 1</option>
+          <option value="./allSounds/snare-acoustic02.wav">Acoustic 2</option>
+          <option value="./allSounds/snare-analog.wav">Analog</option>
+          <option value="./allSounds/snare-big.wav">Big</option>
+          <option value="./allSounds/snare-block.wav">Block</option>
+          <option value="./allSounds/snare-brute.wav">Brute</option>
+          <option value="./allSounds/snare-dist01.wav">Distortion 1</option>
+          <option value="./allSounds/snare-dist02.wav">Distortion 2</option>
+          <option value="./allSounds/snare-dist03.wav">Distortion 3</option>
+          <option value="./allSounds/snare-electro.wav">Electro</option>
+          <option value="./allSounds/snare-lofi01.wav">Lofi 1</option>
+          <option value="./allSounds/snare-lofi02.wav">Lofi 2</option>
+          <option value="./allSounds/snare-modular.wav">Modular</option>
+          <option value="./allSounds/snare-noise.wav">Noise</option>
+          <option value="./allSounds/snare-pinch.wav">Pinch</option>
+          <option value="./allSounds/snare-punch.wav">Punch</option>
+          <option value="./allSounds/snare-smasher.wav">Smasher</option>
+          <option value="./allSounds/snare-sumo.wav">Sumo</option>
+          <option value="./allSounds/snare-vinyl01.wav">Vinyl 1</option>
+          <option value="./allSounds/snare-vinyl02.wav">Vinyl 2</option>
+        </select>
+      </div>
+      <div class="snare">
+        <div class="pad snare-pad b0"></div>
+        <div class="pad snare-pad b1"></div>
+        <div class="pad snare-pad b2"></div>
+        <div class="pad snare-pad b3"></div>
+        <div class="pad snare-pad b4"></div>
+        <div class="pad snare-pad b5"></div>
+        <div class="pad snare-pad b6"></div>
+        <div class="pad snare-pad b7"></div>
+        <div class="pad snare-pad b8"></div>
+        <div class="pad snare-pad b9"></div>
+      </div>
+    </div>
+    <div class="hihat-track">
+      <div class="controls">
+        <img src="/Icons/hithat.png" alt="hihat">
+        <h1>HiHat</h1>
+        <button data-track="2" class="mute hihat-volume">
+          <i class="fas fa-volume-mute"></i>
+        </button>
+        <select name="hihat-select" id="hihat-select">
+          <option value="./allSounds/hihat-808.wav">Normal</option>
+          <option value="./allSounds/hihat-acoustic01.wav">Acoustic 1</option>
+          <option value="./allSounds/hihat-acoustic02.wav">Acoustic 2</option>
+          <option value="./allSounds/hihat-analog.wav">Analog</option>
+          <option value="./allSounds/hihat-digital.wav">Digital</option>
+          <option value="./allSounds/hihat-dist01.wav">Distortion 1</option>
+          <option value="./allSounds/hihat-dist02.wav">Distortion 2</option>
+          <option value="./allSounds/hihat-electro.wav">Electro</option>
+          <option value="./allSounds/hihat-plain.wav">Plain</option>
+          <option value="./allSounds/hihat-reso.wav">Reso</option>
+          <option value="./allSounds/hihat-ring.wav">Modular</option>
+        </select>
+      </div>
+      <div class="hihat">
+        <div class="pad hihat-pad b0"></div>
+        <div class="pad hihat-pad b1"></div>
+        <div class="pad hihat-pad b2"></div>
+        <div class="pad hihat-pad b3"></div>
+        <div class="pad hihat-pad b4"></div>
+        <div class="pad hihat-pad b5"></div>
+        <div class="pad hihat-pad b6"></div>
+        <div class="pad hihat-pad b7"></div>
+        <div class="pad hihat-pad b8"></div>
+        <div class="pad hihat-pad b9"></div>
+      </div>
+    </div>
+    <button class="play">PLAY</button>
+    <div class="tempo">
+      <input type="range" class="tempo-slider" max="300" min="20" value="150">
+      <p>Tempo:<span class="tempo-nr">150</span></p>
+    </div>
+  </div>
+
+  <audio class="kick-sound" src="/allSounds/kick-808.wav"></audio>
+  <audio class="snare-sound" src="/allSounds/snare-808.wav"></audio>
+  <audio class="hihat-sound" src="/allSounds/hihat-808.wav"></audio>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/js/all.min.js"
+    integrity="sha512-UwcC/iaz5ziHX7V6LjSKaXgCuRRqbTp1QHpbOJ4l1nw2/boCfZ2KlFIqBUA/uRVF0onbREnY9do8rM/uT/ilqw=="
+    crossorigin="anonymous"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>

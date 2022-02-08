@@ -1,0 +1,138 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.sequencer {
+  font-family: sans-serif;
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .kick-track,
+  .snare-track,
+  .hihat-track {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    flex-wrap: wrap;
+
+    .controls {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex: 1;
+
+      h1 {
+        text-align: center;
+      }
+      i,
+      svg {
+        pointer-events: none;
+      }
+      img {
+        width: 25px;
+      }
+      .mute {
+        padding: 1rem;
+        border: none;
+
+        border-radius: 10px;
+        color: #fff;
+        cursor: pointer;
+        transition: all 0.5s ease;
+      }
+
+      select {
+        padding: 1rem;
+        font-size: 1rem;
+      }
+    }
+
+    .kick,
+    .hihat,
+    .snare {
+      display: flex;
+      .pad {
+        transition: all 0.5s ease;
+      }
+    }
+    .kick-pad,
+    .snare-pad,
+    .hihat-pad {
+      cursor: pointer;
+      margin: 1rem 0.5rem;
+      width: 3.5rem;
+      height: 3.5rem;
+    }
+  }
+
+  .play {
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    background: #000;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    margin-top: 3rem;
+  }
+}
+
+.kick-pad {
+  background: #84d384;
+  &.active {
+    background: #34d634;
+  }
+}
+.snare-pad {
+  background: #cf7b7b;
+  &.active {
+    background: #d13131;
+  }
+}
+.hihat-pad {
+  background: #8c8ce0;
+  &.active {
+    background: #3636db;
+  }
+}
+
+.mute {
+  background: black;
+  &.active {
+    background: gray;
+  }
+}
+
+.tempo {
+  margin: 3rem;
+  width: 35%;
+  p {
+  font-size: 1.5rem;
+  margin: 2rem;
+  text-align: center;
+  }
+  .tempo-slider {
+    padding: 0.2rem;
+    appearance: none;
+    margin: 1rem 0rem;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 1rem;
+    background: #000;
+  }
+}
+
+@keyframes playTrack {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.2);
+  }
+}
